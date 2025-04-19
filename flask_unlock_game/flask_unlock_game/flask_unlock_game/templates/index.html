@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>程式之塔｜密碼輸入</title>
+</head>
+<body>
+    <h2>🧙‍♂️ 歡迎挑戰程式之塔</h2>
+    <p>請輸入你完成練習後獲得的密碼：</p>
+    <form method="POST">
+        <input type="text" name="code" placeholder="輸入密碼">
+        <input type="submit" value="送出">
+    </form>
+
+    {% if message %}
+        <p><strong>{{ message }}</strong></p>
+    {% endif %}
+</body>
+</html>
